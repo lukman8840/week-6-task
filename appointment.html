@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="appointment.1.CSS">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <body>
+    <div class="container">
+    <div class="Make-Appointments">
+        <div class="Appointment-heading">
+            <h1>Make Appointment</h1>
+        </div>
+        <div class="main-appointment">
+            <div class="inner-main">
+                <img class="img" src="pics/Asibiti.webp">
+            <div class="inner-appointment">
+                </div>
+            </div>
+        </div>
+        </div>
+       
+        <div class="registration-page"> 
+            <div class="form">
+                <h1>You want to see a Doctor easily?<span>Fill the Form below</span></h1>
+                <form id="form">
+                    <div class="text">
+                        
+                        <input class="inside" type="text" name="Name" id="Name" placeholder="Enter Full Name">
+                    </div>
+                    <span style="color: red; font-size: 24px;" id="Name_error"></span>
+                    <div class="text">
+                        <input class="inside" type="email" name="email" id="email" required placeholder="Enter E-mail Address">
+                    </div>
+                    <span style="color: red; font-size: 24px;" id="email_error"></span>
+                    <div class="text">
+                    <input class="inside" type="number" name="number" id="number" placeholder="Enter Mobile Number">
+            </div>
+            <span style="color: red; font-size: 24px;" id="number_error"></span>
+            <div class="appoint">
+                <div>
+                    <select class="radio-buttons" name="gender" id="gender">
+                        <option value="">Select Your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Male">Female</option>
+                        <!-- <option value="Male">Others</option> -->
+                    </select>
+                </div>
+                <span style="color: red;" id="gender_error"></span>
+                
+                <div class="appoint">
+                    <select class="radio-buttons"  id="language">
+                    <option value="select">Preferred Language</option>
+                    <option value="English">English</option>
+                    <option value="English">Fulfulde</option>
+                    <option value="English">Kanuri</option>
+                    <option value="English">Igbo</option>
+                    <option value="English">Yoruba</option>
+                    <option value="English">Pidgin English</option>
+                    </select> 
+                    </div>
+                    <span id="language_error"></span>
+                </div>
+                   <div class="appoint">
+                    <div>
+                    <select class="radio-buttons" name="Type of Appointment" id="appointment">
+                        <option value="">  Types of Appointment</option>
+                        <option value="Consultations">Consultations</option>
+                        <option value="Follow-Up">Follow-Up</option>
+                        <option value="Specific-procedure">Specific Procedure</option> 
+                        <option value="Specific-procedure">Outpatient Appointments</option> 
+                        <option value="Specific-procedure">Primary Care Appointments</option> 
+                        <option value="Specific-procedure">Surgical Consultations</option> 
+                        <option value="Specific-procedure">Mental Health Appointments</option> 
+                    </select> 
+                    </div>
+                    <span style="color: red;" id="appointment_error"></span>
+                    <div>
+                   
+                </div>
+                   
+                    <div class="details">
+                        <div class="Address-details">
+                            <div>
+                                <!-- <input class="Area" type="text" placeholder="Enter Area"> -->
+                            </div>
+                            <div class="Address-details-2">
+                                <!-- <input class="Area" type="text" placeholder="Enter City"> -->
+                            </div> 
+                            <div>
+                                <input class="Area" type="text" id="state" placeholder="State Of Residence">
+                            </div>
+                            <span style="color: red; font-size: 24px;" id="state_error"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="button">Submit</button>
+                <button class="button">Reset</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</form>
+    <div class="right-appointment">
+        <h2>"A Great place to work. A Great place to receive Care
+            Schedule Your Appointment". <span>Leading Medicine</span>
+        </h2>
+            <p>Welcome to our hospital's online appointment booking service. 
+            We're committed to providing you with convenient access to healthcare.
+            Please fill in the required information below to schedule your appointment.
+            Your health and well-being are our top priorities, and we look forward to 
+            serving you. If you have any questions or need assistance, don't hesitate to 
+            contact our administration. Thank you for choosing Modibbo Medics"</p>
+    </div>
+</div>
+<script src="appointment.js"></script>
+</body>
+</html> 

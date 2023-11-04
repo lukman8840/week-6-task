@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_page</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/531e861363.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Esse voluptatum error suscipit nulla a voluptatem quod iste,
+                  quia totam alias! Adipisci, possimus doloribus debitis voluptas enim sapiente officia ab harum.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icons"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h2>Address</h2>
+                        <p>3456 Mamman Bello Street, <br> Garki Area 3, Abuja <br>5506</p>
+                    </div>
+                </div>
+                <div class="icons"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h2>Phone</h2>
+                        <p>+2347045758446</p>
+                        <p>+2348065748383</p>
+                    </div>
+                <!-- </div> -->
+                <div class="icons"><i class="fa-solid fa-envelope"></i>
+                    <div class="text">
+                        <h2>Email</h2> 
+                        <p>Lukmansaidmodibbo@gmail.com</p>
+                        </div> 
+                    </div> 
+            </div>
+            <div class="contactForm">
+                <form id="form">
+                    <h2 class="h2">Send Message</h2>
+                    <div class="inputBox">
+                        <span>Full Name</span>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <span style="color: red;" id="name_error"></span>
+                    <div class="inputBox">
+                        <span>Email</span>
+                        <input type="text" name="Email" id="email">
+                    </div> 
+                    <span style="color: red;" id="email_error"></span>
+                    <div class="inputBox">
+                        <span>Type Your Message........</span>
+                        <textarea  id="textarea"></textarea>
+                    </div>
+                    <span style="color: red;" id="textarea_error"></span>
+                    <div class="inputBox">
+                       <button class="Submit">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>

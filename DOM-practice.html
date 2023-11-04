@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DOM-practice.css">
+    <script src="https://kit.fontawesome.com/531e861363.js" crossorigin="anonymous"></script>
+    <title>Dom</title>
+</head>
+<body>
+    <header>
+        <div class="toggle-btn" onclick="myfunction();">
+         <span><label for="check" class="checkbtn"></label></span>
+         <span><i class="fa-solid fa-bars"></i></label></span>
+        </div>
+        <h1>Logo</h1>
+        <div class="Logo">
+        </div>
+        <nav id="nav" class="show">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+    <script type="text/javaScript">
+        funtion myfunction() {
+            var navbar = document.getElementbyId('nav');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.services{
+    padding:   15px;
+    width: 100%;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.header{
+    background-color:rgb(139, 188, 204);
+    padding: 5px;
+    margin: 12px;
+}
+span{
+    color: hsl(300, 97%, 46%);
+}
+.main-services{
+    display: flex;
+    width: 32%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid blue;
+}
+.content{
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+.content p{
+    font-size: 20px;
+    text-align: justify;
+}
+.content h2{
+    font-size: 30px;
+    color: rgb(70, 183, 221);
+    text-decoration: none;
+    padding: 4px 0px;
+    background: rgb(60, 60, 80);
+    border-radius: 5px;
+}
+.content a{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: rgb(202, 220, 226);
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(73, 73, 190);
+    border-radius: 3px;
+    text-align: center;
+}
+.content a:hover{
+    border-radius: 8px;
+    font-size: 18px;
+    color: green;
+}
+.container-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.services-image:hover{
+    transform: scale(1.1);
+    transition: all 1.5s;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .container-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 90%;
+    }
+    .main-services{
+        width: 90%;
+    }
+}

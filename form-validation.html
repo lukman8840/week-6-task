@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <div id="message"></div>
+        <div> <input type="text" id="name" placeholder="FIrst Name"></div>
+       <div> <input type="text" id="name" placeholder="Last Name"></div>
+        <div><input type="password" id="password" placeholder="Password"></div>
+       
+        
+        <button>Submit</button>
+    </form>
+
+
+    <script>
+        var form = document.getElementById('form')
+
+        var error = []
+
+        form.addEventListener('submit', function(success) {
+            success.preventDefault()
+            // alert("form is Submitted");
+
+            var name = document.getElementById('name')
+            var password = document.getElementById('password')
+
+            if (name.value === ""){
+                error.push("please your username")
+            } if (password.value === ""){
+                error.push("please enter your password")
+            }
+            var message = document.getElementById('message')
+            message.innerText = error
+        })
+    </script>
+</body>
+</html>
